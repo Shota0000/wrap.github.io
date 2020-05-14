@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  min-width: 400px;
+}
+
+.header {
+  background-color: #66ccff;
+  text-align: left;
+  padding-left: 100px;
+}
+
+form {
+  text-align: left;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+.contents {
+  display: in-line;
+}
+
+.inputForm {
+  margin: 10px;
+  width: 500px;
+}
+
+.submit {
+  margin: 10px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.classic {
+  margin: 15px;
+}
+
+.info {
+  display: flex;
+}
+
+.info p {
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+button {
+  display: block;
+  font-size: 20px;
+  width: 60px;
+  height: 35px;
+  border-radius: 4px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  color: #fff;
+  background-color: #66ccff;
+  border: none;
+  outline: none;
+  box-shadow: 4px 4px #d8d8d8;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  float: left;
+}
+
+button:active {
+  position: relative;
+  top: 4px;
+  left: 4px;
+  box-shadow: none;
+}
+
+.posted {
+  display: flex;
+}
+
+.posted .icon {
+  padding-top: 20px;
+}
+
+.submitted {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+.submitted .time {
+  float: right;
+}
+
+.submitted .wrapcount {
+  float: left;
+  padding-left: 100px;
+}
+
+.clear {
+  clear: left;
+}
+
+.count {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+div {
+  position: relative;
+}
+
+.wrap {
+  display: none;
+  position: absolute;
+  padding: 16px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+}
+
+.wrap:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-bottom-color: #333;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+}
+
+:hover + p.wrap {
+  display: block;
+}
